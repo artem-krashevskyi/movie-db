@@ -1,5 +1,5 @@
 {
-  "name": "movie-app",
+  "name": "movie-db",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,5 +45,5 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage": "http://artem-krashevskyi.github.io/movie-db"
+  "homepage": "http://artem-krashevskyi.github.io"
 }

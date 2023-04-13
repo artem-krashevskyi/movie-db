@@ -2,13 +2,7 @@ import { useState, useEffect } from "react";
 import { Box, Container, Typography } from '@mui/material';
 import styled from 'styled-components';
 
-import { imgUrl }  from '../../request';
-
-const RowWrapper = styled(Container)`
-`
-
-const RowHeader = styled(Typography)`
-`
+import { imgUrl }  from '../../api/constants';
 
 const PostersContainer = styled(Box)`
     display: flex;
@@ -22,7 +16,6 @@ const Poster = styled.img`
     width: 100%;
     max-height: 250px;
     transition: transform .1s;
-    // margin-right: 10px;
 
     &:hover {
       transform: scale(1.1);
@@ -42,8 +35,8 @@ const Row = ({ title, fetchUrl }) => {
   }, [fetchUrl]);
 
   return (
-    <RowWrapper>
-      <RowHeader>{title}</RowHeader>
+    <Container>
+      <Typography>{title}</Typography>
       <PostersContainer>
         {movies.map((movie) => (
           <Poster
@@ -53,7 +46,7 @@ const Row = ({ title, fetchUrl }) => {
           />
         ))}
       </PostersContainer>
-    </RowWrapper>
+    </Container>
   );
 };
 

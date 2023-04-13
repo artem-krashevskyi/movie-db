@@ -20,7 +20,7 @@ const Global = createGlobalStyle`
     box-sizing: border-box;
 }`
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
@@ -34,6 +34,6 @@ function App() {
       </BrowserRouter>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

@@ -9,4 +9,5 @@ const requests = {
   fetchPopular: `${baseUrl}movie/popular?api_key=${API_KEY}`,
   fetchTopRated: `${baseUrl}movie/top_rated?api_key=${API_KEY}`  
 };
+
 export default requests;

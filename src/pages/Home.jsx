@@ -1,10 +1,9 @@
-import { Container } from '@mui/material';
 import React from 'react';
 
 import Hero from '../components/Hero';
 import Row from '../components/Row';
 import RowContainer from '../components/RowContainer/'
-import requests from '../request';
+import requests from '../api/constants';
 
 const Home = () => (
     <>

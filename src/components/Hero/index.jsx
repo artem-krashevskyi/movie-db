@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Container, Typography } from '@mui/material';
 import styled from 'styled-components';
 
-import requests from "../../request";
+import requests from "../../api/constants";
 
 const HeaderWrapper = styled(Container)`
     display: flex !important;
@@ -37,6 +37,8 @@ const Hero = () => {
     width: 100%;
     min-height: 500px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-image: url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}");
     display: flex;
     align-items: center;
